@@ -1,0 +1,17 @@
+<h1>Research & Projects</h1>
+
+<div class="research-container">
+  <div class="research-card" *ngFor="let research of researches">
+    <div class="research-card-content">
+      <h3 class="research-title">{{ research.title }}</h3>
+      <p class="research-author">{{ research.name }}</p>
+      <!-- <img
+        src="{{ research.imageUrl }}"
+        alt="{{ research.title }}"
+        class="research-image"
+      />-->
+      <p class="research-description">{{ research.description }}</p>
+      <button class="btn-know-more">Know More</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<h1>Publications</h1>
+
+<div class="publication-container">
+  <div class="publication-card" *ngFor="let publication of publications">
+    <div class="publication-card-content">
+      <h3 class="publication-title">{{ publication.title }}</h3>
+      <p class="publication-authors">{{ publication.authors }}</p>
+      <p class="publication-journal">
+        {{ publication.journal }}, {{ publication.year }}
+      </p>
+      <a href="{{ publication.link }}" class="btn-know-more" target="_blank"
+        >Read More</a
+      >
+    </div>
+  </div>
+</div>

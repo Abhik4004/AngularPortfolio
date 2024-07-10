@@ -1,0 +1,49 @@
+<!-- skills.component.html -->
+
+<h1>Skills & Expertise</h1>
+
+<div class="skills-container">
+  <div class="skills-category" *ngFor="let skill of skills">
+    <h3 class="category-title">{{ skill.category }}</h3>
+    <ul class="skills-list">
+      <li *ngFor="let item of skill.items" class="skill-item">{{ item }}</li>
+    </ul>
+    <p>{{ skill.description }}</p>
+    <!-- Include description -->
+  </div>
+</div>
+
+<div class="experience-section">
+  <h2>Experience</h2>
+  <p>
+    In today's rapidly evolving technological landscape, staying abreast of
+    current programming languages, frameworks, and tools is essential for any
+    professional in the field of technology. Here, we showcase a comprehensive
+    array of skills and expertise that highlight proficiency across various
+    domains critical for modern software development and data-driven innovation.
+  </p>
+
+  <h2>Experience & Teaching</h2>
+  <ul>
+    <li>
+      <strong>Teaching and Mentorship:</strong> Guiding aspiring developers and
+      data scientists through practical workshops and mentorship programs.
+    </li>
+    <li>
+      <strong>Research and Development:</strong> Contributing to groundbreaking
+      research in fields such as natural language processing, machine learning
+      ethics, and renewable energy technologies.
+    </li>
+    <li>
+      <strong>Industry Collaboration:</strong> Partnering with leading
+      organizations to deliver innovative solutions that meet and exceed client
+      expectations.
+    </li>
+  </ul>
+
+  <p>
+    Through continuous learning and adaptation, we remain committed to pushing
+    the boundaries of what's possible in technology, ensuring our skills evolve
+    alongside industry advancements.
+  </p>
+</div>

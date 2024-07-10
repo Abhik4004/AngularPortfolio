@@ -1,0 +1,69 @@
+/* skills.component.css */
+
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  margin-top: 5rem;
+  text-align: center;
+  color: #333; /* Dark grey text color */
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skills-category {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-item {
+  margin-bottom: 5px;
+  color: #666; /* Medium grey text color */
+}
+
+.experience-section {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.experience-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.experience-section ul {
+  padding-left: 20px;
+}
+
+.experience-section li {
+  margin-bottom: 10px;
+  color: #666;
+}

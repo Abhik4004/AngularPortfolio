@@ -1,0 +1,80 @@
+/* Basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.research-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.research-card {
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-5px);
+}
+
+.research-card-content {
+  padding: 20px;
+}
+
+.research-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.research-author {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.research-description {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.research-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.btn-know-more {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-know-more:hover {
+  background-color: #0056b3;
+}
