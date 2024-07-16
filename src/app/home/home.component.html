@@ -48,8 +48,9 @@
     </section>
 
     <div class="button-container">
-      <button>Know More</button>
-      <button>Contact Me</button>
+      <button (click)="navigateToAboutPage()">Know More</button>
+      <button (click)="navigateToCollabPage()">Contact Me</button>
+      <router-outlet></router-outlet>
     </div>
   </main>
 </body>

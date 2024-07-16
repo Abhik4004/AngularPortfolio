@@ -9,6 +9,7 @@ import { PublicationsComponent } from './publications/publications.component';
 import { SkillsExpertiseComponent } from './skills-expertise/skills-expertise.component';
 import { CollaborationPartnerShipComponent } from './collaboration-partner-ship/collaboration-partner-ship.component';
 import { HomeComponent } from './home/home.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HomeComponent } from './home/home.component';
     SkillsExpertiseComponent,
     CollaborationPartnerShipComponent,
     HomeComponent,
+    CardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
