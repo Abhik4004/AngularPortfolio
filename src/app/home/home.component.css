@@ -6,9 +6,19 @@
 }
 
 body {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: white;
+  height: 100vh; /* Ensures full viewport height */
+  margin: 0; /* Ensures no default margin */
+}
+.center-content {
+  width: 80%; /* Adjust width as needed */
+  margin: 0 auto; /* Center horizontally */
+  text-align: center; /* Optional: Center text content */
 }
 
 .main-content {
@@ -43,6 +53,9 @@ body {
   width: 100%;
   height: auto;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
 }
 
 .person-details {

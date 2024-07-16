@@ -1,20 +1,16 @@
-<nav class="navbar">
-  <div class="container">
-    <a href="#" class="logo">SBM</a>
-    <input type="checkbox" id="navbar-toggle" class="navbar-toggle" />
-    <label for="navbar-toggle" class="navbar-toggle-label">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <ul class="navbar-menu">
-      <li><a href="#home">Home</a></li>
-      <li><a routerLink="/about">About</a></li>
-      <li><a routerLink="/research">Research-Projects</a></li>
-      <li><a routerLink="/publication">Publications</a></li>
-      <li><a routerLink="/Skills">Skills-Expertise</a></li>
-      <li><a routerLink="/collab">Collaborations</a></li>
-    </ul>
-  </div>
-</nav>
+<div class="hamburger-menu">
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">
+    <span></span>
+  </label>
+
+  <ul class="menu__box">
+    <li><a class="menu__item" href="/">Home</a></li>
+    <li><a class="menu__item" href="/about">About</a></li>
+    <li><a class="menu__item" href="/collab">Collaboration</a></li>
+    <li><a class="menu__item" href="/research">Research</a></li>
+    <li><a class="menu__item" href="/Skills">Skills</a></li>
+  </ul>
+</div>
+
 <router-outlet></router-outlet>
