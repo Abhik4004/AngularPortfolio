@@ -1,136 +1,81 @@
-/* Reset and basic styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  background-image: url("https://images.unsplash.com/photo-1484291470158-b8f8d608850d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .main-content {
+  max-width: 800px;
+  width: 100%;
   padding: 20px;
+  box-sizing: border-box; /* Ensures padding is included in the width */
 }
 
 .profile-section,
 .about-me-section {
   text-align: center;
-  padding: 50px 20px;
-  max-width: 600px;
-  margin: 0 auto 20px;
-}
-
-.person-container,
-.about-me-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: 40px; /* Spacing between sections */
 }
 
 .person-image {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   overflow: hidden;
   border-radius: 50%;
-  margin-bottom: 20px;
-  justify-content: center;
+  margin: 20px auto; /* Centering the profile image with top margin */
 }
 
 .person-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 50%;
 }
 
-.person-details,
 .about-me-details {
-  text-align: center;
+  text-align: left; /* Align paragraphs to the left */
 }
 
-.person-details h2,
 .about-me-details h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Bottom margin for the heading */
 }
 
-.person-details p,
 .about-me-details p {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-.social-links {
-  margin-top: 15px;
-}
-
-.social-links a {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.social-links img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  margin-bottom: 15px; /* Spacing between paragraphs */
+  line-height: 1.6; /* Line height for readability */
 }
 
 .button-container {
   display: flex;
   justify-content: center;
+  gap: 20px; /* Spacing between buttons */
   margin-top: 20px;
 }
 
 .button-container button {
-  width: 150px;
   padding: 10px 20px;
-  margin: 0 10px;
-  font-size: 1rem;
-  text-align: center;
+  background-color: #007bff;
   color: #fff;
-  background-color: #333;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
 .button-container button:hover {
-  background-color: #555;
-  transform: translateY(-3px);
+  background-color: #0056b3;
 }
 
-/* Media query for screen compatibility */
-@media screen and (max-width: 768px) {
-  .profile-section,
-  .about-me-section {
-    padding: 30px 10px;
-  }
+/* Media Query for Responsive Design */
 
+@media (max-width: 600px) {
   .person-image {
-    width: 100px;
-    height: 100px;
-  }
-
-  .person-details h2,
-  .about-me-details h2 {
-    font-size: 1.5rem;
-  }
-
-  .person-details p,
-  .about-me-details p {
-    font-size: 1rem;
-  }
-
-  .social-links img {
-    width: 25px;
-    height: 25px;
+    width: 120px;
+    height: 120px;
   }
 
   .button-container {
@@ -140,6 +85,6 @@ body {
 
   .button-container button {
     width: 100%;
-    margin: 10px 0;
+    margin-bottom: 10px;
   }
 }
